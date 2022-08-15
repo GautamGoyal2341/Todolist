@@ -60,3 +60,15 @@ height: 100%;
     outline: none;
 
 }
+.add-item{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgb(236, 44, 44);
+    line-height: 40px;
+    color: white;
+    cursor: pointer;
+}
