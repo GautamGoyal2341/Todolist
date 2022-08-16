@@ -7,4 +7,56 @@ margin: 0;
 box-sizing: border-box;
 font-family: 'Poppins', sans-serif;
 
-}   
+} 
+body{  
+background-color: #85FFBD;
+background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+overflow-x: hidden;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+height: 100%;
+}
+
+#todos{
+    padding: 20px;
+    width: 600px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.heading{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.heading h1
+{
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+
+}
+
+.todo-input-container{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+
+
+}
+
+
+.todo_input{
+     
+    width: 100%;
+    height: 40px;
+    padding: 0 0 0 10px;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+
+}
