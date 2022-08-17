@@ -29,12 +29,12 @@ addingButton.addEventListener('click',function(e){
 
         
         var editButton = document.createElement('button');
-        completeButton.classList.add('editBtn');
-        completeButton.innerHTML = '    <i class = "fa fa-plus fa-add-item"></i>'
+        editButton.classList.add('editBtn');
+        editButton.innerHTML = '    <i class = "fa fa-solid fa-edit"></i>'
 
         var trashButton = document.createElement('button');
-        completeButton.classList.add('trash');
-        completeButton.innerHTML = '<i class="fa fa-solid fa-edit" ></i>'
+        trashButton.classList.add('trash');
+        trashButton.innerHTML = '<i class="fa fa-solid fa-trash" ></i>'
 
 
         ulTag.appendChild(todoList);
@@ -45,7 +45,8 @@ addingButton.addEventListener('click',function(e){
         buttonDiv.appendChild(trashButton);
         console.log(ulTag);
 
-
+        MainTodoContainer.appendChild(ulTag);
+        Enput.value = '';
 
     }
 
