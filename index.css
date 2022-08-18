@@ -111,3 +111,16 @@ height: 100%;
     justify-content: space-between;
     overflow: hidden;
 } 
+
+.todo_item{
+
+    width: 100%;
+    background-color: white;
+    color: black;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    cursor: pointer;
+
+}
+
