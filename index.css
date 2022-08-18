@@ -79,7 +79,7 @@ height: 100%;
     transform: translateY(-50%);
     width: 40px;
     height: 40px;
-    background-color: black;
+    background-color: #c572b3;
     line-height: 40px;
     color: white;
     cursor: pointer;
@@ -89,7 +89,7 @@ height: 100%;
 .add-item:nth-child(2)
 {
     right: 40px;
-    background-color: #1f633f;
+    background-color: rgb(41 204 117);
     align-items: center;
     justify-content: center;
     align-content: center;
@@ -138,4 +138,22 @@ height: 100%;
     outline: none;
     cursor: pointer;
     
+}
+
+
+.completed{
+    background-color: #3ec282;
+    margin-right: -5px;
+
+}
+.editBtn{
+    background-color: rgb(86,62,192);
+}
+
+.trash{
+    background-color: #e72727;
+}
+
+.button button i {
+    pointer-events: none;
 }
