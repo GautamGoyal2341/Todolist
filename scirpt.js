@@ -59,7 +59,7 @@ addingButton.addEventListener('click',function(e){
                 var paren = items.parentElement;
                 var pparen = paren.parentElement;
                 var ppparen = pparen.parentElement;
-                pppaaren.classList.add('fall')
+                ppparen.classList.add('fall')
                 // ppparen.remove();  
                 ppparen.addEventListener('transitionend',function(){
                     ppparen.remove();
@@ -70,6 +70,9 @@ addingButton.addEventListener('click',function(e){
  
         Enput.value = '';
 
+    }else if(Enput.value === '')
+    {
+        alert('please enter the msg')
     }
 
 })
