@@ -176,3 +176,19 @@ height: 100%;
     transform: translateY(30px);
     transition: .5s;
 }
+
+#todos > .heading > h1::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 0;
+    width: 30%;
+    height: 2px;
+    background-color: rgb(4, 3, 3);
+    transition: .5s;
+}
+#todos > .heading > h1:hover::before{
+    width: 80%;
+}
