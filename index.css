@@ -170,3 +170,9 @@ height: 100%;
     opacity: 0.7;
     transition: 3s;
 }
+
+.fall{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: .5s;
+}

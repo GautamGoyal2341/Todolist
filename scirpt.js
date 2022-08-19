@@ -54,6 +54,11 @@ addingButton.addEventListener('click',function(e){
                 var paren = items.parentElement;
                 var pparen = paren.parentElement;
                 pparen.classList.add('line-tho')
+            }else if(items.classList[0] === 'trash')
+            {
+                var paren = items.parentElement;
+                var pparen = paren.parentElement;
+                pparen.classList.add('fall')
             }
        })
 
