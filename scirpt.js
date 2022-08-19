@@ -59,8 +59,11 @@ addingButton.addEventListener('click',function(e){
                 var paren = items.parentElement;
                 var pparen = paren.parentElement;
                 var ppparen = pparen.parentElement;
-                pparen.classList.add('fall')
-                ppparen.remove();
+                pppaaren.classList.add('fall')
+                // ppparen.remove();  
+                ppparen.addEventListener('transitionend',function(){
+                    ppparen.remove();
+                }) 
             }
        })
 
