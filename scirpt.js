@@ -58,7 +58,9 @@ addingButton.addEventListener('click',function(e){
             {
                 var paren = items.parentElement;
                 var pparen = paren.parentElement;
+                var ppparen = pparen.parentElement;
                 pparen.classList.add('fall')
+                ppparen.remove();
             }
        })
 
