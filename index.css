@@ -157,3 +157,9 @@ height: 100%;
 .button button i {
     pointer-events: none;
 }
+
+@media screen and (max-width : 600px ) {
+    #todos{
+        width: 100%;
+    }
+}
