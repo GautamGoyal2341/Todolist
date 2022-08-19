@@ -19,6 +19,7 @@ addingButton.addEventListener('click',function(e){
         var liTag = document.createElement('li');
         liTag.innerHTML = Enput.value;
         liTag.classList.add('todo-item');
+       
 
         var buttonDiv  = document.createElement('div');
         buttonDiv.classList.add('button');
@@ -35,6 +36,7 @@ addingButton.addEventListener('click',function(e){
         {
             editWorking(liTag);
         }
+
 
         var trashButton = document.createElement('button');
         trashButton.classList.add('trash');
@@ -88,4 +90,13 @@ function editWorking(e)
     e.firstChild.nodeValue = editValue
 
 
+}
+
+function deleteAll()
+{
+var gettingUltag = document.querySelectorAll('.todo-list-container');
+   for(let i =    0 ; i < gettingUltag.length ; i++)
+   {
+    gettingUltag[i].remove();
+   }
 }
