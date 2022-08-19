@@ -31,6 +31,10 @@ addingButton.addEventListener('click',function(e){
         var editButton = document.createElement('button');
         editButton.classList.add('editBtn');
         editButton.innerHTML = '    <i class = "fa fa-solid fa-edit"></i>'
+        editButton.onclick = function()
+        {
+            editWorking(liTag);
+        }
 
         var trashButton = document.createElement('button');
         trashButton.classList.add('trash');
@@ -76,3 +80,12 @@ addingButton.addEventListener('click',function(e){
     }
 
 })
+
+
+function editWorking(e)
+{
+    var editValue = prompt('edit the Selected item' , e.firstChild.nodeValue );
+    e.firstChild.nodeValue = editValue
+
+
+}
