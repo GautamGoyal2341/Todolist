@@ -46,6 +46,18 @@ addingButton.addEventListener('click',function(e){
         console.log(ulTag);
 
         MainTodoContainer.appendChild(ulTag);
+
+       todoList.addEventListener('click',function(e){
+            var items = e.target;
+            if(items.classList[0] === 'completed')
+            {
+                var paren = items.parentElement;
+                var pparen = paren.parentElement;
+                pparen.classList.add('line-tho')
+            }
+       })
+
+ 
         Enput.value = '';
 
     }
